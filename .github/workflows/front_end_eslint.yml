@@ -30,8 +30,6 @@ jobs:
           cache: 'npm'
       - run: cd frontend && npm ci
       - run: cd frontend && npm run build --if-present
-      - name: Install ESLint and Prettier
-        run: cd frontend && npm install --save-dev eslint prettier eslint-plugin-react eslint-config-react-app
       - name: Lint and format code
         run: |
           cd frontend
