@@ -26,5 +26,7 @@ jobs:
       - name: Install deendencies
         run : cd frontend && npm install
       - name: Lint code
-        run : cd frontend && npm run lint
+        run: |
+          cd frontend
+          npm run lint
         
